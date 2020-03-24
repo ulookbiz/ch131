@@ -12,7 +12,10 @@
 
 // выплаты %
 	$payments = array();
-//	$payments[] = ["date"=>"22-03-2020", "sum"=>100];	
+	$payments[] = ["date"=>"24-03-2020", "sum"=>1153];	
+
+//	корректировки
+	$correct = -41.11;
 
 // установки
 	$rate = 15.25;
@@ -37,7 +40,7 @@
 	}
 
 	$accrued_sum = $sum_passed - $sum_compensated;
-	$result = $accrued_sum - $payment;
+	$result = $accrued_sum - $payment + $correct;
 
 	echo "<html>";
 	echo "Сегодня: ".$today." Ставка: ".$rate."%";
@@ -62,6 +65,11 @@
 		echo($payments[$i]['date']." ==> ".$payments[$i]['sum']."<br>");		
 	}
 	echo "Итого: ".$payment."<br>";	
+	echo "<hr>";
+
+	echo "Корректировка: ";
+	echo $correct."<br>");		
+
 	echo "<hr>";
 	
 	if($result >= 0)
