@@ -1,0 +1,62 @@
+li{
+  margin-top: 3%;
+}
+a{ 
+ text-decoration: none;
+ color: brown; 
+}
+a:hover{
+  color:maroon;
+}
+a:active{
+  color: red;
+}
+a.b{
+  color: white;
+}
+a.b:hover{
+  color:yellow;
+}
+.bigul{
+  font-size: x-large;
+  font-weight: bolder;
+  margin-top: 10%;
+  list-style-type: square;
+}
+.main{
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+}
+.uri{
+  text-align: left;  
+  font-weight: bolder;
+  margin-left: 10px;
+}
+.title{
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+.info{
+  font-size: large;
+  width: 80%;
+  margin: auto;
+  background-color: rgb(80,80,90);
+  color: white;
+  padding: 15px;
+}
+.ref{
+  color: yellow;
+}
+.links{
+  width: 80%;
+  margin: auto;
+  padding:10px;
+}
+.mark{
+	color: yellow;
+}
+.white{
+  color: white;
+}
